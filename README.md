@@ -129,18 +129,10 @@ Environment used for the reported numbers: `torch 2.11`, `timm 1.0.30`, a recent
 - **Concept bottleneck.** The PLIP prompts did not produce faithful explanations here.
 - **Not a clinical tool.** This is a research benchmark and should not be used for diagnosis.
 
-## Suggested next steps
-
-- Break results down by magnification (`100x` vs `400x`, encoded in filenames) and by class.
-- Cross-validate on the 1,224 original images with near-duplicate groups to get a larger clean test set.
-- Add paired significance tests (McNemar) and multiple seeds.
-- Try LoRA or higher-resolution fine-tuning on tiles, and a stronger concept-grounding model than PLIP.
 
 ## Citation and credits
 
 - Dataset: T. Y. Rahman, L. B. Mahanta, A. K. Das, J. D. Sarma, "Histopathological imaging database for oral cancer analysis," *Data in Brief*, 2020. Kaggle copy by Ashenafi Fasil Kebede.
 - Models: Phikon / Phikon-v2 (Owkin), DINOv2 (Meta), PLIP, EfficientNet and ViT via `timm`.
 
-## License
 
-Add your license here (for example MIT for code). The dataset is CC0 on Kaggle; please also credit the original authors above.
